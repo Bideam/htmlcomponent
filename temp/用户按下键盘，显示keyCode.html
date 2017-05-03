@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0039)http://www.fgm.cc/learn/lesson5/03.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>用户按下键盘，显示keyCode</title>
+<style>
+body{
+	text-align:center;
+	font:30px/1.5 \5fae\8f6f\96c5\9ed1, arial;	
+}
+pre{color:green;padding:10px 15px;background:#f0f0f0;border:1px dotted #333;font:12px/1.5 Courier New;text-align:left;}
+span{color:#999;}
+</style>
+<script type="text/javascript">
+window.onload = function ()
+{
+	var oP = document.getElementsByTagName("p")[0];	
+	document.onkeydown = function (event)
+	{
+		var event = event || window.event;
+		oP.innerHTML = event.keyCode;
+		return false
+	}
+}
+</script>
+<style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style></head>
+<body>
+<pre>&lt;script type="text/javascript"&gt;
+window.onload = function ()
+{
+	var oP = document.getElementsByTagName("p")[0];	
+	document.onkeydown = function (event)
+	{
+		var event = event || window.event;
+		oP.innerHTML = event.keyCode;
+		return false
+	}
+}
+&lt;/script&gt;
+</pre>
+<p>83</p>
+
+
+</body></html>

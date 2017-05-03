@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keycode</title>
+	<script type="text/javascript">
+	window.onload=function(){
+		var p= document.getElementById('showcode');
+		document.onkeydown=function(ev){
+			var event= ev || window.event;
+			p.innerHTML=event.keyCode;
+			return true;
+		
+		}
+		document.onclick=function(ev){
+			p.innerHTML=ev.keyCode;
+			return false;
+		}
+		document.oncontextmenu=function(ev){
+			alert("shibai");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+
+<p id="showcode"></p>
+</body>
+</html>
